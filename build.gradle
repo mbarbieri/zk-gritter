@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+	mavenRepo urls: "http://mavensync.zkoss.org/maven2"
+}
+
+dependencies {
+    compile 'org.zkoss.zk:zkmax:3.6.3',
+            'org.zkoss.zk:zk:3.6.3',
+            'org.zkoss.zk:zkex:3.6.3',
+            'org.zkoss.zk:zul:3.6.3',
+            'org.zkoss.zk:zkplus:3.6.3',
+            'org.zkoss.zk:zhtml:3.6.3',
+            'com.google.guava:guava:11.0.2',
+            'com.googlecode.json-simple:json-simple:1.1.1'
+}
